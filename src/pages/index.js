@@ -1,10 +1,11 @@
-import Style from "@/styles/index.css";
+import style from "@/styles/css/index.module.css";
 
 export default function Index() {
   return (
     <>
-      <style jsx>{Style}</style>
-      <p>big red button</p>
+      <div className={style.button}>
+        <p>button</p>
+      </div>
     </>
   )
 }
