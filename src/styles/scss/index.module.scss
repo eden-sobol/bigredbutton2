@@ -1,15 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Poppins", sans-serif;
+}
+
 .button {
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    width: 25vmax;
-    height: 25vmax;
-    border: 1vmin solid black;
-    border-radius: 45%;
-    user-select: none;
-    transition-duration: 0.5s;
+	position: absolute;
+	display: flex;
+	top: 50vh;
+	left: 50vw;
+	justify-content: center;
+	align-items: center;
+	font-size: 13vmin;
+	transform: translate(-50%, -50%);
+	width: 50vmin;
+	height: 50vmin;
+	border: 1vmax solid black;
+	border-radius: 45%;
+	user-select: none;
+	transition-duration: 0.5s;
 	transition: top, left;
-    box-shadow: 2vmax 2vmax black;
-    background: red;
+	box-shadow: 2vmax 2vmax black;
+	background: red;
+	cursor: pointer;
+}
+
+.button:active {
+	box-shadow: 1vmax 1vmax black;
+	top: calc(50vh + 1vmax);
+	left: calc(50svw + 1vmax);
 }

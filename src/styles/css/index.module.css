@@ -1,17 +1,1 @@
-.button {
-  position: absolute;
-  top: 50vh;
-  left: 50vw;
-  transform: translate(-50%, -50%);
-  width: 25vmax;
-  height: 25vmax;
-  border: 1vmin solid black;
-  border-radius: 45%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  transition-duration: 0.5s;
-  transition: top, left;
-  box-shadow: 2vmax 2vmax black;
-  background: red;
-}/*# sourceMappingURL=index.module.css.map */
+@import"https://fonts.googleapis.com/css2?family=Poppins&display=swap";.container{position:absolute;top:0;left:0;width:100vw;height:100vh;font-family:"Poppins",sans-serif}.button{position:absolute;display:flex;top:50vh;left:50vw;justify-content:center;align-items:center;font-size:13vmin;transform:translate(-50%, -50%);width:50vmin;height:50vmin;border:1vmax solid #000;border-radius:45%;-webkit-user-select:none;-moz-user-select:none;user-select:none;transition-duration:.5s;transition:top,left;box-shadow:2vmax 2vmax #000;background:red;cursor:pointer}.button:active{box-shadow:1vmax 1vmax #000;top:calc(50vh + 1vmax);left:calc(50svw + 1vmax)}
