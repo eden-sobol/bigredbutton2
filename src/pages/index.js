@@ -43,6 +43,12 @@ export default function Index() {
 	return (
 		<>
 			<div className={style.container}>
+				<div className={style.settings}>
+					<p>Settings</p>
+				</div>
+				<div className={style.count}>
+					<p>0</p>
+				</div>
 				<div ref={button} onClick={handler} className={`${style.button} ${pressed ? style.press: null
 				}`}>
 					<p>button</p>

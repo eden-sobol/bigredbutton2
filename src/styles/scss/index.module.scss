@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+@mixin ui {
+	position: absolute;
+	background-color: rgb(199, 199, 199);
+	width: 15vmax;
+	height: 5vmax;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 5vmin;
+}
+
 .container {
 	position: absolute;
 	top: 0;
@@ -41,4 +52,18 @@
 	position: absolute;
 	top: calc(50vh + 1vmax);
 	left: calc(50vw + 1vmax);
+}
+
+.settings {
+	@include ui;
+
+	top: 1vmin;
+	right: 1vmin;
+}
+
+.count {
+	@include ui;
+
+	top: calc(5vmax + 2vmin);
+	right: 1vmin;
 }

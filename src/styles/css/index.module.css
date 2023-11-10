@@ -42,4 +42,30 @@
   position: absolute;
   top: calc(50vh + 1vmax);
   left: calc(50vw + 1vmax);
+}
+
+.settings {
+  position: absolute;
+  background-color: rgb(199, 199, 199);
+  width: 15vmax;
+  height: 5vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vmin;
+  top: 1vmin;
+  right: 1vmin;
+}
+
+.count {
+  position: absolute;
+  background-color: rgb(199, 199, 199);
+  width: 15vmax;
+  height: 5vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vmin;
+  top: calc(5vmax + 2vmin);
+  right: 1vmin;
 }/*# sourceMappingURL=index.module.css.map */
