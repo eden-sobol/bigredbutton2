@@ -35,3 +35,10 @@
 	top: calc(50vh + 1vmax);
 	left: calc(50svw + 1vmax);
 }
+
+.press {
+	box-shadow: 1vmax 1vmax black;
+	position: absolute;
+	top: calc(50vh + 1vmax);
+	left: calc(50vw + 1vmax);
+}

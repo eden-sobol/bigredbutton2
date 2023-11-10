@@ -1,10 +1,12 @@
 import style from "@/styles/css/index.module.css";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function Index() {
 	let [blocked, setBlocked] = useState(false);
 	let [keydown, setKey] = useState(false);
+	let [pressed, setPressed] = useState(false);
+	let button = useRef();
 
 	useEffect(() => {
 		const keyDownHandler = (event) => {
@@ -20,13 +22,14 @@ export default function Index() {
 
 	function press() {
 		if (!keydown) {
-			keydown = true;
-			document.querySelector(".bigredbutton").click();
-			document.querySelector(".bigredbutton").classList.add("enter");
-		}
-		window.addEventListener("keyup", function () {
 			setKey(true);
-		});
+			setPressed(true);
+
+			window.addEventListener("keyup", function () {
+				setKey(false);
+				setPressed(false);
+			});
+		}
 	}
 	function handler(e) {
 		console.log("click" + e.key);
@@ -40,7 +43,8 @@ export default function Index() {
 	return (
 		<>
 			<div className={style.container}>
-				<div onClick={handler} className={style.button}>
+				<div ref={button} onClick={handler} className={`${style.button} ${pressed ? style.press: null
+				}`}>
 					<p>button</p>
 				</div>
 			</div>
