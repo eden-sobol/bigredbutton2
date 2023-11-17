@@ -38,6 +38,14 @@ export default function Index() {
 				<div className={style.count}>
 					<p ref={countElement}>0</p>
 				</div>
+
+				<div className={style.save}>
+					<p>Save</p>
+				</div>
+				<div className={style.clear}>
+					<p>Clear Save</p>
+				</div>
+
 				<div ref={button} onClick={counter} className={`${style.button} ${pressed ? style.press: null
 				}`}>
 					<p>button</p>

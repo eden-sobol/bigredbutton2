@@ -47,12 +47,14 @@
 .settings {
   position: absolute;
   background-color: rgb(199, 199, 199);
-  width: 15vmax;
-  height: 5vmax;
+  width: 20vmax;
+  height: 10vmin;
+  border: 0.75vmin solid black;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5vmin;
+  font-size: 3.5rem;
   top: 1vmin;
   right: 1vmin;
 }
@@ -60,12 +62,46 @@
 .count {
   position: absolute;
   background-color: rgb(199, 199, 199);
-  width: 15vmax;
-  height: 5vmax;
+  width: 20vmax;
+  height: 10vmin;
+  border: 0.75vmin solid black;
+  border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5vmin;
-  top: calc(5vmax + 2vmin);
+  font-size: 3.5rem;
+  top: 15vmin;
   right: 1vmin;
+}
+
+.save {
+  position: absolute;
+  background-color: rgb(199, 199, 199);
+  width: 20vmax;
+  height: 10vmin;
+  border: 0.75vmin solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  top: 1vmin;
+  left: 1vmin;
+  cursor: pointer;
+}
+
+.clear {
+  position: absolute;
+  background-color: rgb(199, 199, 199);
+  width: 20vmax;
+  height: 10vmin;
+  border: 0.75vmin solid black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  top: 15vmin;
+  left: 1vmin;
+  cursor: pointer;
 }/*# sourceMappingURL=index.module.css.map */

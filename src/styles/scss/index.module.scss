@@ -3,12 +3,14 @@
 @mixin ui {
 	position: absolute;
 	background-color: rgb(199, 199, 199);
-	width: 15vmax;
-	height: 5vmax;
+	width: 20vmax;
+	height: 10vmin;
+	border: 0.75vmin solid black;
+	border-radius: 15px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 5vmin;
+	font-size: 3.5rem;
 }
 
 .container {
@@ -64,6 +66,24 @@
 .count {
 	@include ui;
 
-	top: calc(5vmax + 2vmin);
+	top: 15vmin;
 	right: 1vmin;
+}
+
+.save {
+	@include ui;
+
+	top: 1vmin;
+	left: 1vmin;
+
+	cursor: pointer;
+}
+
+.clear {
+	@include ui;
+
+	top: 15vmin;
+	left: 1vmin;
+
+	cursor: pointer;
 }

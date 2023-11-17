@@ -8,7 +8,7 @@ Rebrand to "the button"
 Customizable button (shapes, text, etc)
 Less settings
 Group all text colors and background colors to 2 groups
-Seizure settings (change color ever _ clicks)
+Seizure settings (change color every _ clicks)
 Lore
 Cutscenes
 Canadian mode
