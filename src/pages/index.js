@@ -4,40 +4,29 @@ import { useState, useEffect, useRef } from "react";
 
 export default function Index() {
 	let [blocked, setBlocked] = useState(false);
-	let [keydown, setKey] = useState(false);
 	let [pressed, setPressed] = useState(false);
+
 	let button = useRef();
+	let countElement = useRef();
 
 	useEffect(() => {
-		const keyDownHandler = (event) => {
-			handler(event);
-		};
+		console.log("load");
 
-		document.addEventListener("keydown", keyDownHandler);
-
-		return () => {
-			document.removeEventListener("keydown", keyDownHandler);
-		};
+		key();
 	}, []);
 
-	function press() {
-		if (!keydown) {
-			setKey(true);
+	function key() {
+		window.addEventListener("keydown", () => {
 			setPressed(true);
-
-			window.addEventListener("keyup", function () {
-				setKey(false);
-				setPressed(false);
-			});
-		}
+		});
+		window.addEventListener("keyup", () => {
+			setPressed(false);
+			counter();
+		});
 	}
-	function handler(e) {
-		console.log("click" + e.key);
-		if (!blocked) {
-			if (e.key == "Enter") {
-				press();
-			}
-		}
+
+	function counter() {
+		countElement.current.innerHTML = parseFloat(countElement.current.innerHTML) + 1;
 	}
 
 	return (
@@ -47,9 +36,9 @@ export default function Index() {
 					<p>Settings</p>
 				</div>
 				<div className={style.count}>
-					<p>0</p>
+					<p ref={countElement}>0</p>
 				</div>
-				<div ref={button} onClick={handler} className={`${style.button} ${pressed ? style.press: null
+				<div ref={button} onClick={counter} className={`${style.button} ${pressed ? style.press: null
 				}`}>
 					<p>button</p>
 				</div>
