@@ -20,6 +20,8 @@ Change colour based on holiday
 Scrumpulous shumplets ad placement
 
 NEED:
+TITLE (ADD THIS DUMMY)
+FAVICON (ADD THIS DUMMY)
 settings
 save
 clear save
