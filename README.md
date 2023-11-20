@@ -19,6 +19,10 @@ Taylor Swift Easter egg
 Change colour based on holiday
 Scrumpulous shumplets ad placement
 
+NEED:
+settings
+save
+clear save
 
 BUGS:
-do not count if key is f5, f10, f11, f12, a control combo or alt combo
+none that im aware of

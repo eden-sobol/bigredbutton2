@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@mixin ui {
+	position: absolute;
+	background-color: rgb(199, 199, 199);
+	width: 20vmax;
+	height: 10vmin;
+	border: 0.75vmin solid black;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.5rem;
+}
+
+.container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Poppins", sans-serif;
+}
+
+.main {
+    @include ui;
+
+    width: 75vw;
+    height: 75vh;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+
+    justify-content: start;
+    align-items: start;
+}
+
+.setting {
+    display: flex;
+
+    font-size: 2rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.back {
+    @include ui;
+
+    top: 1vmin;
+    left: 1vmin;
+    font-size: 3rem;
+
+    width: 10vmax;
+    height: 10vmin;
+
+    cursor: pointer;
+}
+
+@media (orientation: portrait) {
+    .back {
+        width: 20vmax;
+        height: 10vmin;
+
+		font-size: 2rem;
+	}
+}

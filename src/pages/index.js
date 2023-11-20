@@ -36,7 +36,7 @@ export default function Index() {
 	return (
 		<>
 			<div className={style.container}>
-				<div className={style.settings}>
+				<div className={style.settings} onClick={() => {window.location.href = "/settings"}}>
 					<p>Settings</p>
 				</div>
 				<div className={style.count}>
