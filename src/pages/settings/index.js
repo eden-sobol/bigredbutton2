@@ -3,11 +3,15 @@ import style from "@/styles/css/settings.module.css";
 export default function Settings() {
     return (
         <>
+            <title>Settings</title>
+
             <div className={style.container}>
                 <div className={style.main}>
                     <div className={style.setting}>
                         <p>Setting 1</p>
-                        <input type="checkbox" className={style.checkbox}></input>
+                        <div className={style.button}>
+                            button
+                        </div>
                     </div>
                 </div>
 

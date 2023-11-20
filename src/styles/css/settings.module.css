@@ -29,15 +29,42 @@
 }
 
 .setting {
+  position: relative;
+  left: 1rem;
   display: flex;
   font-size: 2rem;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
-.checkbox {
-  width: 1.8rem;
-  height: 1.8rem;
+.button {
+  position: relative;
+  top: 0;
+  left: -5vmax;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13vmin;
+  transform: translate(-50%, -50%);
+  width: 50vmin;
+  height: 50vmin;
+  border: 1vmax solid black;
+  border-radius: 45%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition-duration: 0.5s;
+  transition: top, left;
+  box-shadow: 2vmax 2vmax black;
+  background: red;
+  cursor: pointer;
+  transform: scale(10%);
+}
+
+.button:active {
+  box-shadow: 1vmax 1vmax black;
+  transform: scale(10%) translate(1vmax, 1vmax);
 }
 
 .back {
@@ -64,5 +91,11 @@
     width: 20vmax;
     height: 10vmin;
     font-size: 2rem;
+  }
+  .button {
+    transform: scale(30%);
+  }
+  .button:active {
+    transform: scale(30%) translate(1vmax, 1vmax);
   }
 }/*# sourceMappingURL=settings.module.css.map */

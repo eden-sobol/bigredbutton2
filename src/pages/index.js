@@ -35,6 +35,8 @@ export default function Index() {
 
 	return (
 		<>
+			<title>Big Button</title>
+            
 			<div className={style.container}>
 				<div className={style.settings} onClick={() => {window.location.href = "/settings"}}>
 					<p>Settings</p>
