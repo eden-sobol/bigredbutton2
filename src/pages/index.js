@@ -16,12 +16,16 @@ export default function Index() {
 	}, []);
 
 	function key() {
-		window.addEventListener("keydown", () => {
-			setPressed(true);
+		window.addEventListener("keydown", (e) => {
+			if (e.key != "F5" && e.key != "F10" && e.key != "F11" && e.key != "F12") {
+				setPressed(true);
+			}
 		});
-		window.addEventListener("keyup", () => {
-			setPressed(false);
-			counter();
+		window.addEventListener("keyup", (e) => {
+			if (e.key != "F5" && e.key != "F10" && e.key != "F11" && e.key != "F12") {
+				setPressed(false);
+				counter();
+			}
 		});
 	}
 
