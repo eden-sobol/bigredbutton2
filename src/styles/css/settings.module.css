@@ -27,7 +27,6 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: start;
-  overflow: scroll;
 }
 
 .setting {
