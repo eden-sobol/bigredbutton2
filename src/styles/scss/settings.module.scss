@@ -26,13 +26,17 @@
     @include ui;
 
     width: 75vw;
-    height: 75vh;
-    top: 50vh;
+    height: 100vh;
+    top: 60vh;
     left: 50vw;
     transform: translate(-50%, -50%);
 
-    justify-content: start;
+    flex-direction: column;
+
+    justify-content: space-around;
     align-items: start;
+
+    overflow: scroll;
 }
 
 .setting {
@@ -43,23 +47,26 @@
 
     font-size: 2rem;
 
-    justify-content: center;
     align-items: center;
 
     overflow:hidden;
+
+    height: 6rem;
+    width: calc(75vw - 3rem);
+
+    background: gray;
+    border: 0.2rem solid black;
 }
 
 .button {
-    position: relative;
-    top: 0;
-    left: -5vmax;
+    aspect-ratio: 1 / 1;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 13vmin;
 	transform: translate(-50%, -50%);
 	width: 50vmin;
-	height: 50vmin;
 	border: 1vmax solid black;
 	border-radius: 45%;
 	user-select: none;
@@ -69,12 +76,14 @@
 	background: red;
 	cursor: pointer;
 
-    transform: scale(10%);
+    overflow: hidden;
+
+    transform: scale(20%);
 }
 
 .button:active {
 	box-shadow: 1vmax 1vmax black;
-	transform: scale(10%) translate(1vmax, 1vmax);
+	transform: scale(20%) translate(1vmax, 1vmax);
 }
 
 .back {
@@ -91,6 +100,10 @@
 }
 
 @media (orientation: portrait) {
+    .setting {
+        font-size: 1rem;
+    }
+
     .back {
         width: 20vmax;
         height: 10vmin;
@@ -99,9 +112,10 @@
 	}
 
     .button {
-        transform: scale(30%);
+        transform: scale(35%);
+        font-size: 1.25rem;
     }
     .button:active {
-        transform: scale(30%) translate(1vmax, 1vmax);
+        transform: scale(35%) translate(1vmax, 1vmax);
     }
 }
